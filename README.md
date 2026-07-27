@@ -313,8 +313,10 @@ Video Walkthrough:
 Swagger:
 http://localhost:8080/swagger-ui/index.html
 
-Postman API link
+Postman API link :
+
 you can directly import these api in your postman
+
 https://amogh-8021-7-a-80112-es-team.postman.co/workspace/Personal-Workspace~351a8937-67e4-42ac-82b5-e4ed385382fe/collection/45718098-c1e77ee8-cd81-45df-b707-636091b382ca?action=share&creator=45718098
 
 
