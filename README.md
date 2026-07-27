@@ -267,7 +267,7 @@ However, overall database throughput is much higher compared to locking rows for
 # Setup
 
 ```bash
-git clone <repo>
+git clone <https://github.com/amogh8021/Clinzo-Telemedicine>
 cd Telemedicine
 ```
 # configure database
