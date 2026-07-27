@@ -134,7 +134,22 @@ PUT /bookings/{id}/reschedule
 
 Instead of directly generating slots using consultation duration, the application computes a Base Slot Duration.
 
+## Base Slot Duration
+
+The application computes the smallest reusable slot using the Greatest Common Divisor (GCD) of every supported appointment duration.
+
+Formula:
+
 Base Slot Duration = GCD(firstVisitDuration, followUpDuration)
+
+Example:
+
+First Visit = 30 minutes
+Follow-up = 20 minutes
+
+GCD(30,20)=10 minutes
+
+Therefore every availability window is divided into 10-minute base slots.
 
 Example:
 
