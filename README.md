@@ -20,7 +20,6 @@
 - Design Decisions
 - Evaluation Criteria Mapping
 - Setup
-- File/Folder structure
 - Screenshots
 - Submission Links
 
