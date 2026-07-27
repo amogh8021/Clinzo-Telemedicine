@@ -323,7 +323,7 @@ GitHub Repository:
 https://github.com/amogh8021/Clinzo-Telemedicine
 
 Video Walkthrough:
-<add link>
+https://drive.google.com/file/d/1J9Rnen5M2xnCPaabw0C45kRlrpCnhD9u/view?usp=drive_link
 
 Swagger:
 http://localhost:8080/swagger-ui/index.html
