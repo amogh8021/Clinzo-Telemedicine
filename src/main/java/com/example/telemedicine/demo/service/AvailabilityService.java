@@ -53,7 +53,7 @@ public class AvailabilityService {
 
         Availability savedAvailability = availabilityRepository.save(availability);
 
-        // Slots generate karein
+
         slotService.generateSlots(savedAvailability);
 
         return availabilityMapper.toResponse(savedAvailability);

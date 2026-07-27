@@ -92,8 +92,7 @@ public class BookingService {
         int baseSlotDuration = doctor.getBaseSlotDuration();
         int requiredSlotsCount = appointmentDuration / baseSlotDuration;
 
-        // 1. Pehle Naye contiguous slots dhoondhein aur reserve karne ki koshish karein
-        List<Slot> newSlots = findRequiredSlots(newStartingSlot, requiredSlotsCount);
+              List<Slot> newSlots = findRequiredSlots(newStartingSlot, requiredSlotsCount);
 
         try {
             reserveSlots(newSlots);
@@ -101,7 +100,7 @@ public class BookingService {
             throw new SlotUnavailableException("Selected starting slot or consecutive block is no longer available.");
         }
 
-        // 2. Successful reservation ke baad Purane slots release karein
+
         List<Slot> oldSlots = new ArrayList<>(booking.getSlots());
         releaseSlots(oldSlots);
 
@@ -177,9 +176,7 @@ public class BookingService {
                 .toList();
     }
 
-    /**
-     * Retrieves contiguous available slots starting from startingSlot.
-     */
+
     private List<Slot> findRequiredSlots(Slot startingSlot, int requiredCount) {
         if (startingSlot.getStatus() != SlotStatus.AVAILABLE) {
             throw new SlotUnavailableException("The selected starting slot is no longer available.");
@@ -207,10 +204,10 @@ public class BookingService {
         for (int i = 1; i < requiredCount; i++) {
             Slot previousSlot = selectedSlots.get(i - 1);
 
-            // Next slot ki exactly expected start time calculate karein
+
             Instant expectedNextStart = previousSlot.getEndTime().plus(Duration.ofMinutes(bufferMinutes));
 
-            // List index ke jagah exact start time se agla slot match karein
+
             Slot nextSlot = upcomingSlots.stream()
                     .filter(s -> s.getStartTime().equals(expectedNextStart))
                     .findFirst()
