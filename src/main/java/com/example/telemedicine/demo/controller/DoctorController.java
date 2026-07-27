@@ -18,9 +18,6 @@ public class DoctorController {
 
     private final DoctorService doctorService;
 
-    /**
-     * Register a new doctor.
-     */
     @PostMapping
     public ResponseEntity<DoctorResponse> createDoctor(
             @Valid @RequestBody DoctorRequest request) {
@@ -44,9 +41,7 @@ public class DoctorController {
         );
     }
 
-    /**
-     * Get all doctors.
-     */
+
     @GetMapping
     public ResponseEntity<List<DoctorResponse>> getAllDoctors() {
 
@@ -55,9 +50,6 @@ public class DoctorController {
         );
     }
 
-    /**
-     * Update an existing doctor's profile.
-     */
     @PutMapping("/{doctorId}")
     public ResponseEntity<DoctorResponse> updateDoctor(
             @PathVariable Long doctorId,
@@ -68,9 +60,7 @@ public class DoctorController {
         );
     }
 
-    /**
-     * Delete a doctor.
-     */
+
     @DeleteMapping("/{doctorId}")
     public ResponseEntity<Void> deleteDoctor(
             @PathVariable Long doctorId) {

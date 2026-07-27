@@ -36,21 +36,21 @@ public class SlotService {
         int buffer = doctor.getBufferTime();
         ZoneId zoneId = ZoneId.of(doctor.getTimezone());
 
-        // 1. Start and End DateTime construct karein
+
         LocalDateTime currentStart = LocalDateTime.of(availability.getDate(), availability.getStartTime());
         LocalDateTime availabilityEnd = LocalDateTime.of(availability.getDate(), availability.getEndTime());
 
-        // Agar EndTime StartTime se chhota hai (Matlab midnight 12 baje ke baad tak doctor available hai)
+
         if (availability.getEndTime().isBefore(availability.getStartTime())) {
             availabilityEnd = availabilityEnd.plusDays(1);
         }
 
         List<Slot> slots = new ArrayList<>();
 
-        // 2. LocalDateTime to LocalDateTime comparison fix
+
         while (!currentStart.plusMinutes(slotDuration).isAfter(availabilityEnd)) {
 
-            // 3. ZonedDateTime setup clean syntax
+           //converting local time to instant
             Instant slotStart = ZonedDateTime.of(currentStart, zoneId).toInstant();
             Instant slotEnd = ZonedDateTime.of(currentStart.plusMinutes(slotDuration), zoneId).toInstant();
 

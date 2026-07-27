@@ -18,9 +18,7 @@ public class AvailabilityController {
 
     private final AvailabilityService availabilityService;
 
-    /**
-     * Create a doctor's availability window.
-     */
+
     @PostMapping
     public ResponseEntity<AvailabilityResponse> createAvailability(
             @Valid @RequestBody AvailabilityRequest request) {
@@ -32,9 +30,7 @@ public class AvailabilityController {
                 .body(response);
     }
 
-    /**
-     * Get an availability window by its ID.
-     */
+
     @GetMapping("/{availabilityId}")
     public ResponseEntity<AvailabilityResponse> getAvailability(
             @PathVariable Long availabilityId) {
@@ -44,9 +40,7 @@ public class AvailabilityController {
         );
     }
 
-    /**
-     * Get all availability windows across all doctors.
-     */
+
     @GetMapping
     public ResponseEntity<List<AvailabilityResponse>> getAllAvailabilities() {
 
@@ -55,9 +49,7 @@ public class AvailabilityController {
         );
     }
 
-    /**
-     * Delete an availability window and clean up associated unbooked slots.
-     */
+
     @DeleteMapping("/{availabilityId}")
     public ResponseEntity<Void> deleteAvailability(
             @PathVariable Long availabilityId) {

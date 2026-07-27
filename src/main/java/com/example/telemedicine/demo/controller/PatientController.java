@@ -18,9 +18,7 @@ public class PatientController {
 
     private final PatientService patientService;
 
-    /**
-     * Register a new patient.
-     */
+
     @PostMapping
     public ResponseEntity<PatientResponse> createPatient(
             @Valid @RequestBody PatientRequest request) {
@@ -32,18 +30,12 @@ public class PatientController {
                 .body(response);
     }
 
-    /**
-     * Get all patients.
-     */
     @GetMapping
     public ResponseEntity<List<PatientResponse>> getAllPatients() {
 
         return ResponseEntity.ok(patientService.getAllPatients());
     }
 
-    /**
-     * Update an existing patient.
-     */
     @PutMapping("/{patientId}")
     public ResponseEntity<PatientResponse> updatePatient(
             @PathVariable Long patientId,
@@ -54,9 +46,7 @@ public class PatientController {
         );
     }
 
-    /**
-     * Delete a patient.
-     */
+
     @DeleteMapping("/{patientId}")
     public ResponseEntity<Void> deletePatient(
             @PathVariable Long patientId) {
