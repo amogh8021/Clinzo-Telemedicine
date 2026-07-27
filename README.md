@@ -320,7 +320,7 @@ http://localhost:8080/swagger-ui/index.html
 # Submission
 
 GitHub Repository:
-<add link>
+https://github.com/amogh8021/Clinzo-Telemedicine
 
 Video Walkthrough:
 <add link>
