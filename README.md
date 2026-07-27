@@ -285,22 +285,22 @@ http://localhost:8080/swagger-ui/index.html
 # Screenshots
 
 ## Swagger
-(Add screenshot)
-
-## Doctor APIs
-(Add screenshot)
-
-## Availability APIs
-(Add screenshot)
-
-## Slot APIs
-(Add screenshot)
-
-## Booking APIs
-(Add screenshot)
+<img width="1532" height="851" alt="image" src="https://github.com/user-attachments/assets/6d02ce6b-6352-40cf-8cda-296be9402a93" />
+<img width="1532" height="851" alt="image" src="https://github.com/user-attachments/assets/b3cfa897-a690-45b0-a2d0-e8d01e60c785" />
 
 ## Postman Responses
-(Add screenshot)
+<img width="1920" height="1080" alt="Screenshot From 2026-07-25 20-33-35" src="https://github.com/user-attachments/assets/ee1a16f9-9d8b-4f0f-802d-d9df4e5a1e09" />
+<img width="1920" height="1080" alt="Screenshot From 2026-07-27 02-00-26" src="https://github.com/user-attachments/assets/4bb55696-8fde-46a0-8ad4-5fa077cad2c0" />
+<img width="1920" height="1080" alt="Screenshot From 2026-07-27 02-12-58" src="https://github.com/user-attachments/assets/a5cc7fd4-a135-47a3-9ff3-334e0962ea4a" />
+<img width="1920" height="1080" alt="Screenshot From 2026-07-27 02-22-01" src="https://github.com/user-attachments/assets/4b6c46e5-3cfa-4aad-bf16-ee7b37493260" />
+<img width="1920" height="1080" alt="Screenshot From 2026-07-27 02-50-09" src="https://github.com/user-attachments/assets/5e019d41-d2c0-4d43-a0af-b5356d4b88ce" />
+<img width="1920" height="1080" alt="Screenshot From 2026-07-27 02-52-25" src="https://github.com/user-attachments/assets/f7cf1f4d-57a5-4ec8-946b-b1e92cd51da1" />
+<img width="1920" height="1080" alt="Screenshot From 2026-07-27 02-54-14" src="https://github.com/user-attachments/assets/e328dc11-8b9c-400f-abda-6b77d561b47a" />
+<img width="1920" height="1080" alt="Screenshot From 2026-07-27 02-55-27" src="https://github.com/user-attachments/assets/5608944e-f700-46ac-8bf3-7d0c45760020" />
+<img width="1920" height="1080" alt="Screenshot From 2026-07-27 13-20-58" src="https://github.com/user-attachments/assets/4fffb7c1-f609-4c60-8fdf-0b73c9dd7ba4" />
+<img width="1920" height="1080" alt="Screenshot From 2026-07-27 13-20-58" src="https://github.com/user-attachments/assets/1b230ee9-c192-47c0-8dcf-4377f72b7657" />
+<img width="1920" height="1080" alt="Screenshot From 2026-07-27 16-08-02" src="https://github.com/user-attachments/assets/0f0100d1-e8ee-42c4-ab4e-bfe04bdd0f17" />
+<img width="1920" height="1080" alt="Screenshot From 2026-07-27 16-08-02" src="https://github.com/user-attachments/assets/979b3463-06e9-4382-a7ce-08c09cbf1ace" />
 
 # Submission
 
@@ -312,3 +312,9 @@ Video Walkthrough:
 
 Swagger:
 http://localhost:8080/swagger-ui/index.html
+
+Postman API link
+you can directly import these api in your postman
+https://amogh-8021-7-a-80112-es-team.postman.co/workspace/Personal-Workspace~351a8937-67e4-42ac-82b5-e4ed385382fe/collection/45718098-c1e77ee8-cd81-45df-b707-636091b382ca?action=share&creator=45718098
+
+
